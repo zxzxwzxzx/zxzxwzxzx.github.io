@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta name="description" content="朱旭的个人主页。华盛顿大学计算机科学硕士，关注世界模型、多模态与 AI Agent。研究成果、项目与实习经历。">
+  <meta property="og:title" content="zx的主页">
+  <meta property="og:description" content="从模型研究到真实应用。论文、AI 项目与实习经历。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zxzxwzxzx.github.io/">
+  <link rel="canonical" href="https://zxzxwzxzx.github.io/">
+  <link rel="icon" href="assets/favicon-star.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <title>zx的主页</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至正文</a>
+  <header class="site-header">
+    <nav aria-label="主导航">
+      <a href="#research">研究</a><a href="#projects">项目</a><a href="#method">方法</a><a href="#experience">经历</a><a href="#contact">联系 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> 2027 届 · 计算机科学硕士</p>
+        <h1 id="hero-title">从<span class="serif-word">模型研究</span><br>走向真实应用<span class="accent">。</span></h1>
+        <p class="hero-description">关注世界模型、多模态与 AI Agent。<br>在机器人导航、语音数据与智能应用之间，<br class="desktop-break">探索模型能力如何落到具体问题上。</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">看看我的项目 <span aria-hidden="true">↘</span></a></div>
+      </div>
+      <aside class="profile-panel" aria-label="个人背景">
+        <div class="profile-name"><span class="profile-name-cn">朱旭</span><span class="profile-name-en" lang="en">Xu Zhu</span></div>
+        <div class="education-item"><div><strong>华盛顿大学</strong><span>计算机科学硕士</span><a class="education-ranking" href="https://csrankings.org/#/index?all&amp;us" target="_blank" rel="noopener noreferrer" title="CSRankings：美国 · 全领域 · 2016–2026；核实于 2026-10-10">CSRankings 美国第 6 <span aria-hidden="true">↗</span></a><small class="ranking-scope">全领域 · 2016–2026</small></div><div class="education-meta">2025.09 — 2027.06<br><b>GPA 4.0</b></div></div>
+        <div class="education-item"><div><strong>山东大学</strong><span>软件工程学士</span></div><div class="education-meta">2020.09 — 2024.06<br><b>GPA 3.8</b></div></div>
+      </aside>
+    </section>
+    <div class="affiliations" aria-label="实习团队"><span class="micro">EXPERIENCE AT</span><span>字节跳动 <small>Seed 语音</small></span><span>Microsoft <small>机器学习</small></span><span>Soul <small>多模态理解</small></span></div>
+
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / RESEARCH</p><h2 id="research-title">让模型理解世界。</h2></div><p>世界模型 · 视觉导航 · 具身智能</p></div>
+      <article class="paper-feature">
+        <div class="paper-copy"><div class="badges"><span class="badge filled">ECCV 2026</span><span class="badge">共同一作</span></div><h3>UniWM</h3><p class="paper-title" lang="en">Towards Unified World Models for Visual Navigation via Memory-Augmented Planning and Foresight</p><p class="body-copy">将传统机器人导航方法迁移到 1X Humanoid 25-DoF 人形机器人，搭建训练与评测流程，验证方法在不同自由度下的有效性。</p><div class="paper-metrics"><div><strong>81<span>%</span></strong><span>完整模型导航成功率</span></div><div><strong>25<span> DoF</span></strong><span>人形机器人验证</span></div></div><p class="metric-note">NWM 基线成功率 51%；完整模型 ATE / RPE 分别降低 50.9% / 41.7%。</p><a class="text-link" href="https://arxiv.org/abs/2510.08713" target="_blank" rel="noopener noreferrer">阅读论文 <span aria-hidden="true">↗</span></a></div>
+        <div class="research-art" role="img" aria-label="导航概念示意：机器人根据记忆与预测规划路径，非论文实验图">
+          <div class="art-caption micro">MEMORY → PLANNING → FORESIGHT</div>
+          <svg viewBox="0 0 440 390" aria-hidden="true">
+            <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M 32 0 L 0 0 0 32" fill="none" stroke="#c6d8ed" stroke-width=".7"/></pattern></defs>
+            <rect x="28" y="30" width="384" height="320" fill="url(#grid)"/>
+            <g fill="#dfeaf8" stroke="#a8bed9"><path d="M60 115h100v65H60zM280 225h98v70h-98zM280 62h66v60h-66z"/><path d="M60 115l20-15h100l-20 15M160 115l20-15v65l-20 15M280 225l20-15h98l-20 15M378 225l20-15v70l-20 15" fill="#ccdef2"/></g>
+            <path d="M84 302L188 302Q218 302 218 267V183Q218 151 248 151H353V106" fill="none" stroke="#4b7eb8" stroke-width="3" stroke-dasharray="7 7"/>
+            <circle cx="84" cy="302" r="7" fill="#4b7eb8"/><circle cx="353" cy="106" r="17" fill="#e4b56f" opacity=".35"/><circle cx="353" cy="106" r="6" fill="#aa7123"/>
+            <g transform="translate(218 223)" fill="#f9fcff" stroke="#34557c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cy="-55" r="12"/><rect x="-17" y="-36" width="34" height="42" rx="7"/><path d="M-17-29l-17 23 7 20M17-29L32-6 25 13M-9 6l-7 29-8 9M9 6l10 28 10 8" fill="none"/><path d="M-5-56h10"/></g>
+            <text x="55" y="331" fill="#637d9b" font-size="11" font-family="monospace">OBSERVATION</text><text x="325" y="84" fill="#8d601f" font-size="11" font-family="monospace">GOAL</text>
+          </svg><p>从观察到行动</p><span class="micro">视觉导航概念示意</span>
+        </div>
+      </article>
+      <div class="research-narrative" aria-label="UniWM 项目摘要">
+        <p class="case-kicker">UniWM / 项目摘要</p><figure class="architecture"><figcaption><span>迁移与评测流程</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/uniwm.svg" data-title="UniWM 人形机器人迁移与评测流程" aria-haspopup="dialog" aria-label="放大查看UniWM 人形机器人迁移与评测流程">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/uniwm.svg" alt="UniWM 人形机器人迁移与评测流程，蓝色节点表示个人负责模块" loading="lazy" width="720" height="400"><div class="diagram-legend"><i aria-hidden="true"></i>蓝色为个人负责模块<span>架构 / 流程示意</span></div></figure>
+        <div class="narrative-grid">
+          <div><h4>研究问题</h4><p>视觉导航需要把对环境的理解转化为行动。将世界建模与导航规划分开处理，可能使模型预测的未来状态与实际选取的动作不一致。UniWM 将视觉预测和动作规划放入同一个多模态自回归框架，并通过分层记忆结合近期观察与较长的轨迹上下文，使规划能够参考预测的视觉结果。</p></div>
+          <div><h4>我的工作</h4><p>我参与这一方向的研究，重点负责在 1X Humanoid 数据上搭建完整实验代码与训练评测流程，把传统机器人导航方法迁移到 25-DoF 人形机器人设置。工作目标是验证方法能否跨越不同自由度的机器人形态，并通过与 NWM 的对照实验分析导航成功率和轨迹误差。</p></div>
+          <div><h4>实验结果</h4><p>在论文报告的 1X Humanoid 数据集实验中，完整模型导航成功率为 <strong>81%</strong>，NWM 基线为 <strong>51%</strong>；ATE 从 0.57 降至 0.28，RPE 从 0.24 降至 0.14，相对降低 <strong>50.9% 和 41.7%</strong>。这些结果支持了方法向高自由度人形机器人导航迁移的有效性。</p><p class="source-note">数据集实验结果 · 完整模型口径 · <a href="https://arxiv.org/html/2510.08713v3#S4.T8" target="_blank" rel="noopener noreferrer">论文表 8 ↗</a></p></div>
+        </div>
+      </div>
+      <div class="research-secondary">
+        <article><span class="micro">LANGUAGE-CONDITIONED WORLD MODELING</span><h3>LCVN <span>语言条件视觉导航</span></h3><figure class="architecture"><figcaption><span>方法与实验流程</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/lcvn.svg" data-title="LCVN 语言条件导航实验流程" aria-haspopup="dialog" aria-label="放大查看LCVN 语言条件导航实验流程">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/lcvn.svg" alt="LCVN 语言条件导航实验流程，蓝色节点表示个人负责模块" loading="lazy" width="720" height="400"><div class="diagram-legend"><i aria-hidden="true"></i>蓝色为个人负责模块<span>架构 / 流程示意</span></div></figure>
+          <h4>背景与任务</h4><p>LCVN 研究仅给定初始第一视角观察与自然语言指令时，智能体如何完成导航。任务不依赖目标图像，因此需要将语言意图与视觉预测、连续动作联系起来。论文探索了在想象的隐空间中学习策略，以及统一自回归预测动作和观察两种路径。</p>
+          <h4>我的工作</h4><p>我参与项目的代码实现，负责整体实现与模型训练、测试流程，把模型运行、基线对照和评测连起来。在项目中，我的贡献集中于算法实现与实验执行，使语言条件导航方法能够在相应任务和数据设置下得到验证。</p>
+          <h4>实验结果</h4><p>在论文 v1 的测试集对比中，LCVN-Uni（k=2）成功率为 <strong>36%</strong>，NWM(lang) + LCVN-AC（k=4）为 <strong>22%</strong>；ATE / RPE 分别从 1.31 / 0.44 降至 0.65 / 0.22。对应相对降幅为 <strong>50.4% / 50.0%</strong>，指标为完整模型结果。</p>
+          <p class="source-note"><a href="https://arxiv.org/abs/2603.26741" target="_blank" rel="noopener noreferrer">阅读论文 ↗</a> · <a href="https://arxiv.org/html/2603.26741v1#S5.T1" target="_blank" rel="noopener noreferrer">实验版本与表 1 ↗</a></p>
+        </article>
+        <article><span class="micro">HUMAN-AWARE VISUAL NAVIGATION</span><h3>HA-VLN <span>动态人体渲染</span></h3><figure class="architecture"><figcaption><span>动态人体渲染流程</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/havln.svg" data-title="HA-VLN 动态人体渲染流程" aria-haspopup="dialog" aria-label="放大查看HA-VLN 动态人体渲染流程">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/havln.svg" alt="HA-VLN 动态人体渲染流程，蓝色节点表示个人负责模块" loading="lazy" width="720" height="400"><div class="diagram-legend"><i aria-hidden="true"></i>蓝色为个人负责模块<span>架构 / 流程示意</span></div></figure>
+          <h4>背景与任务</h4><p>在有人活动的环境中，导航需要处理移动的人体及其交互。HA-VLN 将动态、多人的环境引入视觉语言导航评测，用于考察智能体在这类场景中的目标到达、避碰及社会感知能力。</p>
+          <h4>我的工作</h4><p>我参与项目，负责人体模型渲染模块，为导航评测提供动态人体的视觉呈现。工作重点是将人体渲染接入动态场景，使导航模型能够在包含多人活动的环境中接受评测。</p>
+          <h4>系统结果</h4><p>论文报告的连续仿真系统在单个场景中最多支持 <strong>10 个动态人体</strong>，单张 <strong>24GB GPU</strong> 可达到 <strong>30–60 FPS</strong>。渲染模块为动态环境视觉导航评测提供了基础支持。</p>
+          <p class="source-note"><a href="https://arxiv.org/abs/2503.14229" target="_blank" rel="noopener noreferrer">阅读论文 ↗</a> · <a href="https://arxiv.org/html/2503.14229v5#S4" target="_blank" rel="noopener noreferrer">系统实现与性能 ↗</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2 id="projects-title">把能力放进真实场景。</h2></div><p>字节跳动 · Seed 语音团队</p></div>
+      <div class="filter-bar" role="group" aria-label="项目分类"><button class="filter active" data-filter="all" aria-pressed="true">全部 <span>5</span></button><button class="filter" data-filter="data" aria-pressed="false">数据与评测</button><button class="filter" data-filter="agent" aria-pressed="false">Agent</button><button class="filter" data-filter="app" aria-pressed="false">应用与工程</button></div>
+      <p class="sr-only" id="filter-status" aria-live="polite">显示全部 5 个项目</p>
+      <div class="project-list">
+        <article class="project project-expanded" data-category="data" id="project-1">
+          <div class="project-number">01</div>
+          <div class="project-main"><div class="project-heading"><h3>Sail 数据飞轮</h3><span class="tag">DATA / EVALUATION</span></div><p class="project-intro">将用户反馈的问题会话，整理为可用于语音模型迭代的数据。</p><p class="role-line">我的职责 · 数据生产与质量控制</p><figure class="architecture"><figcaption><span>数据生产流程</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/sail.svg" data-title="Sail 数据生产与质量控制流程" aria-haspopup="dialog" aria-label="放大查看Sail 数据生产与质量控制流程">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/sail.svg" alt="Sail 数据生产与质量控制流程，蓝色节点表示个人负责模块" loading="lazy" width="720" height="400"><div class="diagram-legend"><i aria-hidden="true"></i>蓝色为个人负责模块<span>架构 / 流程示意</span></div></figure><div class="case-abstract"><div class="case-block"><h4>背景与目标</h4><p>豆包语音的用户反馈包含大量问题会话。模型迭代需要进一步识别问题发生在哪一轮、属于哪种类型，并把可用样本整理出来。我的工作是搭建从反馈会话到问题轮次的处理流程，在批量处理效率与标注质量之间取得平衡，为后续模型迭代提供数据。</p></div><div class="case-block"><h4>技术方案与个人工作</h4><p>我对齐离线评测与在线反馈中的问题判定口径，采用<strong>初标、精标模型双重打标</strong>，结合人工抽样金标校准自动判定标准。流程围绕问题标签和对应轮次展开：通过模型完成批量标注，再利用金标与质量校验检查输出，让筛选结果能够对应到会话中的具体异常位置。</p></div><div class="case-block"><h4>结果与应用</h4><p>这套流程<strong>每周处理豆包语音用户反馈的 3 万+ 问题会话</strong>，覆盖 <strong>30 类问题标签</strong>，从会话中定位异常轮次。经过质量校验的数据回流模型迭代，支持从真实用户反馈中持续整理问题样本。</p></div></div><p class="source-note">3 万+ 指每周处理的用户反馈问题会话数；30 类指问题标签覆盖范围。</p></div>
+          <div class="project-result"><strong>3 万+</strong><span>每周用户反馈问题会话</span><small>覆盖 30 类问题标签</small></div>
+        </article>
+        <article class="project project-expanded" data-category="data agent" id="project-2">
+          <div class="project-number">02</div>
+          <div class="project-main"><div class="project-heading"><h3>自动化竞品评测</h3><span class="tag">AGENT / EVALUATION</span></div><p class="project-intro">把语音采集、批量测试与异常接管串成持续运行的评测流程。</p><p class="role-line">我的职责 · 自动化评测链路开发</p><figure class="architecture"><figcaption><span>三维定位与修复设计</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/evaluation.svg" data-title="自动化竞品评测三维定位与修复设计" data-note="蓝色：采集守护与已确认定位维度 · 金色虚线：建议扩展设计 · 小屏幕可横向查看" aria-haspopup="dialog" aria-label="放大查看自动化竞品评测三维定位与修复设计">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/evaluation.svg" alt="自动化竞品评测三维定位与修复设计，硬件、浏览器、模型应用三维定位；虚线为建议扩展设计" loading="lazy" width="960" height="820"><div class="diagram-legend"><i aria-hidden="true"></i>蓝色：采集守护与定位维度<span>虚线：扩展设计</span></div></figure><div class="case-abstract"><div class="case-block"><h4>背景与目标</h4><p>语音竞品评测需要持续采集多个模型的交互结果。随着模型数量和测试量增长，人工逐项灌测、检查脚本运行并处理采集异常，会占用大量时间。项目的目标是形成可批量运行的采集测试链路，并减少异常情况下对人工值守的依赖。</p></div><div class="case-block"><h4>技术方案与个人工作</h4><p>我搭建了覆盖 <strong>GPT、Gemini 等 10+ 模型</strong>的评测链路，将回环采集与批量测试结合起来。采集脚本负责常规任务，Agent 负责监控运行状态与异常接管。问题定位围绕<strong>硬件、浏览器、模型应用</strong>三个维度展开，分别排查设备与采集链路、页面与自动化运行状态、应用响应与交互问题。</p></div><div class="case-block"><h4>现有链路结果</h4><p>链路<strong>每日产出 10,000+ 条评测数据</strong>，灌测人力投入减少 <strong>76%</strong>。异常自愈率达到 <strong>90%</strong>，多数异常无需人工介入，使人工精力能够更多地用于结果分析与需要进一步排查的问题。</p></div></div><section class="agent-design" aria-labelledby="agent-design-title"><div class="agent-design-heading"><h4 id="agent-design-title">Agent 职责与交接</h4><span>检查项与修复链路：扩展设计</span></div><p class="agent-handoff">三个定位维度为硬件、浏览器和模型应用。以下检查项、交付格式及修复—测试—恢复验收流程是围绕现有采集守护补充的设计方案。</p><dl class="agent-roles"><div class="agent-role"><dt>01 / 硬件定位 Agent</dt><dd>检查音频输入输出设备、采集链路和录音信号，区分设备不可用与无有效音频。</dd><dd><b>交付：</b>设备状态、录音样本、异常环节及判断依据。</dd></div><div class="agent-role"><dt>02 / 浏览器定位 Agent</dt><dd>检查麦克风权限、会话状态、页面变化及自动化操作是否到达预期页面状态。</dd><dd><b>交付：</b>页面状态、操作记录、复现步骤及异常位置。</dd></div><div class="agent-role"><dt>03 / 模型应用定位 Agent</dt><dd>检查请求与响应、错误提示、响应超时和对话轮次，区分应用侧异常与采集侧故障。</dd><dd><b>交付：</b>响应证据、受影响模型、失败轮次及归因结论。</dd></div><div class="agent-role"><dt>04 / 修复 Agent</dt><dd>根据定位证据选择受限修复：设备重连、页面或会话恢复、操作适配、可重试请求重试；保留回退方式。</dd><dd><b>交付：</b>修复动作、变更范围、执行结果与待验证用例。</dd></div><div class="agent-role"><dt>05 / 测试 Agent</dt><dd>复现原始失败用例，再检查相邻用例；同时验证音频有效性、对话轮次与结果完整性。</dd><dd><b>交付：</b>通过 / 失败结论及证据；失败时返回修复环节。</dd></div><div class="agent-role"><dt>06 / 恢复验收 Agent</dt><dd>测试通过后先恢复小批量采集，观察任务状态和数据产出；确认稳定后再恢复正常任务。</dd><dd><b>交付：</b>恢复结论、观察记录；仍有异常时转人工处理。</dd></div></dl><p class="agent-handoff"><strong>协调与退出：</strong>由协调层汇总异常证据、归因结论和已执行动作，派发给对应 Agent。跨维度结论冲突时先补充证据；修复有范围和次数限制。证据不足、超出修复范围、重试用尽或验收失败时，保留现场并交由人工处理。</p></section></div>
+          <div class="project-result"><strong>76<span>%</span></strong><span>灌测人力减少</span><small>10+ 模型 · 日产 10,000+ 条</small></div>
+        </article>
+        <article class="project project-expanded" data-category="app" id="project-3">
+          <div class="project-number">03</div>
+          <div class="project-main"><div class="project-heading"><h3>AI 面试平台</h3><span class="tag">REALTIME / FULL STACK</span></div><p class="project-intro">面向外包人员与多语种发音人面试，连接内部配置、公网语音交互和结果复核。</p><p class="role-line">我的职责 · 管理端、面试端与后端全栈开发</p><figure class="architecture"><figcaption><span>管理、语音与结果同步架构</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/interview.svg" data-title="AI 面试平台内外网架构" data-note="按本地仓库整理的系统架构 · 数据箭头表示内容流向 · 跨边界请求均由内网发起" aria-haspopup="dialog" aria-label="放大查看AI 面试平台内外网架构">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/interview.svg" alt="AI 面试平台内外网架构：管理、快照发布、公网运行态、语音网关与结果回收" loading="lazy" width="960" height="770"><div class="diagram-legend"><i aria-hidden="true"></i>内网主动发起跨边界请求<span>仓库实现概览</span></div></figure>
+<div class="case-abstract">
+<div class="case-block"><h4>背景与约束</h4><p>业务需要让外部人员通过邀请链接完成语音面试，同时由内部人员维护面试配置、查看录音与转写、完成复核。公网不能直连内部数据库，面试过程还需要处理授权、设备检查、重复开始、断线和提交重试等情况。我的工作是完成管理端、面试端与后端开发，将配置发布、语音交互和证据回收连成可交付的流程。</p></div>
+<div class="case-block"><h4>架构决策与实现</h4><p>平台拆分为<strong>内网管理面与公网运行面</strong>：内部 RDS 保存面试定义、邀请与复核数据，公网只维护执行当前面试所需的运行状态。配置发布由 <strong>Snapshot Publisher</strong> 从发布队列领取任务，校验快照标识与内容哈希后下发；结果回收由内网的 <strong>Result Collector</strong> 主动拉取事件和提交清单，通过游标、租约和幂等处理支持重复执行。两条同步链路均由内网发起，公网不持有内部数据库访问能力。</p></div>
+<div class="case-block"><h4>语音交互与过程留存</h4><p>平台接入 Seed Realtime 及组合式语音能力。受限 <strong>Voice Gateway</strong> 按面试会话校验语音通道权限与服务端截止时间，适配 ASR、Seed 2.0 和语音输出，并同步当前话题、候选人与面试官的转写。录音按双方音轨分别登记，提交时将回答、音频引用、转写和快照关联到同一份清单，供内部回放和人工复核。</p></div>
+<div class="case-block"><h4>结果与应用</h4><p>平台<strong>已上线用于外包人员交付</strong>，支持从邀请、授权、语音面试到结果回收与人工复核的完整业务流程。版本化快照使每次面试对应明确的配置，原始录音与转写为后续检查保留依据；重复请求和同步重试通过运行态与提交契约进行约束。</p></div>
+</div>
+<section class="agent-design platform-detail" aria-labelledby="platform-detail-title"><div class="agent-design-heading"><h4 id="platform-detail-title">关键模块与工程细节</h4><span>依据功能验收记录与仓库实现</span></div><dl class="agent-roles">
+<div class="agent-role"><dt>01 / 管理与配置发布</dt><dd>内部 SSO 与角色权限控制管理入口，支持候选人、面试、题目和邀请管理。语言、题目、最大尝试次数及时间限制固化为不可变快照；重复发布同一内容可幂等处理，同一标识内容冲突时拒绝覆盖。</dd></div>
+<div class="agent-role"><dt>02 / 面试运行状态</dt><dd>邀请兑换短期浏览器会话，完成登记、授权与开始前检查后进入面试。同浏览器重复开始复用当前尝试，不同浏览器不能并行占用同一邀请；服务端控制次数和硬截止，重连不延长截止时间。</dd></div>
+<div class="agent-role"><dt>03 / 语音网关与双轨证据</dt><dd>按会话授权接入语音能力，保存带角色与话题信息的转写。候选人与面试官音轨分别编号，已登记片段禁止被不同内容覆盖；提交前检查必答题及语音证据是否齐全。</dd></div>
+<div class="agent-role"><dt>04 / 同步与一致性</dt><dd>发布与回收采用不同同步身份，并校验请求签名、时间戳和 nonce。Collector 按游标发现结果、通过租约领取任务，核对提交身份和清单后写入内部 RDS；身份冲突进入隔离处理，可恢复失败保留重试路径。</dd></div>
+</dl></section></div>
+          <div class="project-result"><strong>已上线</strong><span>用于外包人员交付</span><small>配置发布 · 语音面试 · 人工复核</small></div>
+        </article>
+        <article class="project project-expanded" data-category="agent" id="project-4">
+          <div class="project-number">04</div>
+          <div class="project-main"><div class="project-heading"><h3>AgentBuddy</h3><span class="tag">SKILL GOVERNANCE</span></div><p class="project-intro">从新增查重、存量清理到发布检查，减少 Skill 重复与选取冲突。</p><p class="role-line">我的职责 · Skill 治理与调用观测</p><figure class="architecture"><figcaption><span>Skill 治理流程</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/agentbuddy.svg" data-title="AgentBuddy Skill 治理架构" aria-haspopup="dialog" aria-label="放大查看AgentBuddy Skill 治理架构">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/agentbuddy.svg" alt="AgentBuddy Skill 治理架构，蓝色节点表示个人负责模块" loading="lazy" width="720" height="400"><div class="diagram-legend"><i aria-hidden="true"></i>蓝色为个人负责模块<span>架构 / 流程示意</span></div></figure><div class="case-abstract"><div class="case-block"><h4>背景与目标</h4><p>Skill 数量增加后，功能相近的 Skill 容易重复建设，描述或适用范围重叠也会让 Agent 选取发生冲突。治理既需要在新增入口识别重复能力，也需要根据真实调用排查已有 Skill 的边界问题。我的工作围绕查重、调用分析和发布检查展开。</p></div><div class="case-block"><h4>技术方案与个人工作</h4><p>对新加入的 Skill，我使用 <strong>Top-K 相似度检索</strong>查找已有相近能力，辅助减少重复建设；对存量 Skill，结合调用日志排查选取冲突与适用范围并进行清理。同时开发埋点 SDK 与日志采集模块，日志经网关写入 RDS，为调用分析提供依据。发布侧结合 <strong>Python AST 静态扫描、发布规则校验与回下载 SHA256 完整性检查</strong>，检查 Skill 的交付内容。</p></div><div class="case-block"><h4>结果与验证</h4><p>根据 Skill 的描述与适用边界编写测试集，验证治理后的选取效果，<strong>Skill 选取命中率达到 98%</strong>。这一验证关注 Agent 是否选到了适合当前描述与边界条件的 Skill，为后续治理提供了可重复检查的用例。</p></div></div><p class="source-note">验证口径：基于 Skill 描述与适用边界构建的测试集，统计选取命中率。</p></div>
+          <div class="project-result"><strong>98<span>%</span></strong><span>测试集选取命中率</span><small>依据描述与适用边界构建</small></div>
+        </article>
+        <article class="project project-expanded" data-category="app" id="project-5">
+          <div class="project-number">05</div>
+          <div class="project-main"><div class="project-heading"><h3>Kaboo</h3><span class="tag">CONTRIBUTOR / RELIABILITY</span></div><p class="project-intro">优化客户端菜单栏快照更新：先展示可用数据，再以受控工作量推进后台刷新。</p><p class="role-line">我的职责 · 项目贡献者 · 客户端菜单栏快照稳定性优化</p><figure class="architecture"><figcaption><span>菜单栏快照读取与限量刷新</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/kaboo.svg" data-title="Kaboo 客户端菜单栏快照更新流程" data-note="蓝色：本人确认的限量更新优化 · 白色：仓库已有机制 · 1.5 秒为单轮平均耗时" aria-haspopup="dialog" aria-label="放大查看Kaboo 客户端菜单栏快照更新流程">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/kaboo.svg" alt="Kaboo 客户端菜单栏快照更新流程，区分缓存读取、后台刷新、限量续跑与结果发布" loading="lazy" width="960" height="730"><div class="diagram-legend"><i aria-hidden="true"></i>蓝色：限量更新优化<span>白色：系统已有机制</span></div></figure>
+<div class="case-abstract">
+<div class="case-block"><h4>背景与问题</h4><p>Kaboo 客户端菜单栏通过本机服务获取一份展示快照，汇总 Token、统计图表、额度与运行状态。我的优化针对这一快照的更新过程：当单轮承担过多处理工作时，刷新容易超时，影响面板更新的稳定性。因此需要限制一次更新的工作量，同时让未完成部分能够继续推进。</p></div>
+<div class="case-block"><h4>技术决策：为每轮更新设置边界</h4><p>将更新改为<strong>分批限量处理与断点续跑</strong>。每轮从此前保留的进度继续，处理本轮允许范围内的数据；达到单轮上限后停止继续处理，保留本轮结果和续跑进度，剩余内容留到后续更新。这样将完整更新拆成多轮推进，单轮可以及时结束，尚未处理的数据也有明确的后续处理路径。</p></div>
+<div class="case-block"><h4>结果与作用</h4><p>优化后，<strong>客户端菜单栏单次快照更新平均耗时为 1.5 秒</strong>。限量处理控制了单次更新的规模，续跑机制使未完成部分能够逐轮补齐。这项贡献聚焦快照更新的稳定性；Kaboo 平台整体覆盖 <strong>1 万+ 内部用户</strong>，为优化提供了实际使用场景。</p></div>
+</div>
+<section class="agent-design snapshot-detail" aria-labelledby="snapshot-detail-title"><div class="agent-design-heading"><h4 id="snapshot-detail-title">放到客户端链路中看</h4><span>系统已有机制与个人优化</span></div><dl class="agent-roles">
+<div class="agent-role"><dt>01 / 先展示缓存，再异步刷新</dt><dd>普通快照读取请求优先返回当前可用缓存；需要更新时再触发后台构建。没有缓存时先返回占位快照。日志扫描与用量上报是独立流程，打开菜单栏不等于重新扫描全部日志。</dd></div>
+<div class="agent-role"><dt>02 / 个人优化：单轮限量与续跑</dt><dd>为一次更新设置处理上限，达到上限即停止本轮继续处理，保留结果和进度，未完成内容留给后续更新。把可能过重的一次工作拆成多轮，控制单轮响应时间。</dd></div>
+<div class="agent-role"><dt>03 / 避免重复刷新与过期结果写回</dt><dd>已有刷新任务运行时，客户端不会再启动同一轮后台刷新；构建器通过锁协调更新。发布时校验设置版本与账号认证版本，避免异步任务在切换设置或账号后写回过期结果。</dd></div>
+<div class="agent-role"><dt>04 / 按字段保留可用数据</dt><dd>构建器合并统计、热力图与额度等分区。请求失败且字段缺失时，在缓存身份、时效和设置允许的范围内复用旧值；成功返回的空结果仍然有效，不能用旧数据覆盖真实的零值或空值。</dd></div>
+</dl><p class="agent-handoff"><strong>两类缓存各司其职：</strong>本地用量缓存保存按时间桶聚合的使用数据；最近可用快照保存面板需要的汇总 JSON。上报完成与快照刷新分别进行，因此刷新状态和各数据分区的时效需要分别判断。</p></section><p class="source-note">指标口径：1.5 秒为本人提供的客户端菜单栏单轮快照更新平均耗时；1 万+ 为平台整体用户规模。</p></div>
+          <div class="project-result"><strong>1.5<span> s</span></strong><span>单轮更新平均耗时</span><small>限量处理 · 断点续跑</small></div>
+        </article>
+      </div>
+    </section>
+
+<section class="section methodology-section" id="method" aria-labelledby="method-title">
+<div class="section-heading"><div><p class="eyebrow">03 / ENGINEERING NOTES</p><h2 id="method-title">先把需求与验收说清楚。</h2></div><p>SDD · Spec Driven Development</p></div>
+<div class="method-intro"><span class="badge">参考方法</span><p>把目标、边界和验收条件整理成可评审的规格，再进入实现。用原型确认交互，用测试与实际结果检查交付；发现新约束时，回到规格中更新共同约定。</p></div>
+<figure class="architecture"><figcaption><span>SDD：明确目标和验收标准</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/sdd.svg" data-title="SDD：明确目标和验收标准" data-note="矢量重绘 · 小屏幕可横向滑动查看" aria-haspopup="dialog" aria-label="放大查看SDD：明确目标和验收标准">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/sdd.svg" alt="SDD：明确目标和验收标准，展示需求输入、人和 Agent 协作、Proposal 产出及审批反馈流程" loading="lazy" width="2048" height="1141"><div class="diagram-legend">矢量重绘<span>需求 · 协作 · 产出 · 验收</span></div></figure>
+<div class="method-deliverables"><div><h3>需求规格</h3><p>明确做什么、做到什么程度，以及影响其他模块的约定。</p></div><div><h3>交互原型</h3><p>提前检查加载、空态、失败和重试等实际操作情境。</p></div><div><h3>验收条件</h3><p>把预期行为变成可检查的条件，并为交付保留依据。</p></div></div>
+<p class="source-note method-source">参考：杨杰《<a href="https://bytetech.info/articles/7688996788297924634#Wn36dsVnVoQeyCxlmqlmfYyayWe" target="_blank" rel="noopener noreferrer">AGame 工程实践：Studio 从 AI Coding 到 AI Native Engineering</a>》SDD 章节。上图按原图布局、文字与流程关系重绘，完整说明见来源。</p>
+</section>
+
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / EXPERIENCE</p><h2 id="experience-title">研究与工程，两条线。</h2></div></div>
+      <div class="experience-layout"><div class="timeline"><article class="timeline-item"><time>2026.06 — 至今</time><div><h3>字节跳动 <span>Seed 语音团队</span></h3><p class="role">AI 应用开发实习生</p><p>语音模型数据生产、自动化评测与 AI 应用开发；参与 Agent Skill 治理及编程工具用量分析。</p></div></article><article class="timeline-item"><time>2026.05 — 2026.06</time><div><h3>Soul</h3><p class="role">多模态理解算法实习生</p><p>语音通话中的用户偏好涉及开场内容、说话时序与声音风格，单一维度难以完整表达这些差异。我负责从通话分析到用户偏好聚类的整套流程，为下游推荐系统提供可使用的分群与偏好特征。</p><figure class="architecture"><figcaption><span>语音理解流程</span><button type="button" class="diagram-open" data-diagram="assets/diagrams/soul.svg" data-title="Soul 语音用户偏好聚类流程" aria-haspopup="dialog" aria-label="放大查看Soul 语音用户偏好聚类流程">放大查看 <span aria-hidden="true">↗</span></button></figcaption><img src="assets/diagrams/soul.svg" alt="Soul 语音用户偏好聚类流程，蓝色节点表示个人负责模块" loading="lazy" width="720" height="470"><div class="diagram-legend"><i aria-hidden="true"></i>蓝色为个人负责模块<span>架构 / 流程示意</span></div></figure><div class="soul-case"><h4>特征设计与实现</h4><p>通过 <strong>ASR</strong> 分析开场文本，结合 <strong>VAD</strong> 提取语音活动时序，再纳入声音风格特征进行偏好聚类。声音类型关注甜美、帅气等风格属性；开场分析综合内容与时序信息，形成多模态的通话特征。</p><h4>交付结果</h4><p>独立完成特征提取、偏好聚类及输出流程，产出用户分群与偏好特征，并提供给下游推荐系统。</p></div><p class="source-note">负责范围：整套处理流程与聚类实现。</p></div></article><article class="timeline-item"><time>2025.12 — 2026.03</time><div><h3>Microsoft</h3><p class="role">机器学习工程实习生 · MLE</p><p>参与 UniWM、LCVN 与 HA-VLN，完成机器人导航训练评测、跨自由度验证及动态人体渲染。</p></div></article></div>
+      <aside class="toolbox"><p class="eyebrow">TOOLBOX</p><h3>技术栈</h3><dl><dt>编程语言</dt><dd>Python · Java · SQL</dd><dt>Agent</dt><dd>LangGraph · Function Calling<br>MCP · ReAct</dd><dt>检索</dt><dd>RAG · 向量库 · 混合召回<br>重排 · 文档切分</dd><dt>模型与训练</dt><dd>PyTorch · 世界模型<br>视觉导航 · 多模态评测</dd><dt>工程</dt><dd>FastAPI · Docker · RDS<br>埋点与监控</dd></dl></aside></div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">05 / SAY HELLO</p><h2 id="contact-title">期待下一次合作<span>。</span></h2><p>2027 届求职 · 算法 / AI 应用 / Agent 开发</p><a class="email-link" href="mailto:zhuxu042@gmail.com">zhuxu042@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><button class="copy-email" type="button">复制邮箱</button><span id="copy-status" role="status"></span></div></div></section>
+  </main>
+  <footer><span>© 2026 朱旭</span><a href="#top">回到顶部 ↑</a></footer>
+<dialog class="diagram-dialog" aria-labelledby="diagram-dialog-title"><div class="diagram-dialog-header"><h2 id="diagram-dialog-title">项目架构图</h2><button type="button" class="diagram-close" aria-label="关闭架构图">关闭 <span aria-hidden="true">×</span></button></div><div class="diagram-canvas"><img class="diagram-full" alt=""></div><p class="diagram-dialog-note">蓝色为个人负责模块 · 小屏幕可横向滑动查看</p></dialog>
+</body>
+</html>
