@@ -1,4 +1,4 @@
-# 朱旭的个人主页
+# 个人主页
 
 目标地址：https://zxzxwzxzx.github.io/
 
