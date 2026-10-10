@@ -17,11 +17,10 @@ python3 -m http.server 4173 --bind 127.0.0.1
 ## GitHub Pages 部署
 
 1. 创建 `zxzxwzxzx/zxzxwzxzx.github.io` 公开仓库。
-2. 将本目录内容（包括 `.github`、`.nojekyll`）推送到仓库根目录的 `main` 分支。不要推送整个简历工作区。
-3. 在仓库 Settings → Pages → Build and deployment 中，将 Source 设为 GitHub Actions。
-4. 到 Actions 查看 `Deploy personal homepage`，成功后访问主页地址。
+2. 将网页源码、`.nojekyll`、项目 SVG 图和标签页图标推送到仓库根目录的 `main` 分支。不要推送整个简历工作区或 PDF 简历。
+3. 在仓库 Settings → Pages → Build and deployment 中，将 Source 设为 `Deploy from a branch`，选择 `main` 和 `/(root)`。
+4. 到 Actions 查看 `pages build and deployment`，成功后访问主页地址。本项目无需编译。
 
-也可以不使用 Actions：将 Pages 来源设为 `Deploy from a branch`，选择 `main` 和 `/(root)`。本项目无需编译。
 
 ## 更新内容
 
